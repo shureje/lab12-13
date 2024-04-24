@@ -3,7 +3,6 @@ all: main
 main: main.o struct.o
 	@echo "linking aplication"
 	gcc -o main main.o struct.o 
-	chmod +X main
 
 main.o: main.c
 	@echo "Compiling main file"

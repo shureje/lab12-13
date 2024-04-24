@@ -22,10 +22,13 @@ typedef struct
 
 
 void input(TRAIN *);
-void printrasp(TRAIN *);
-void sort(TRAIN *);
+void printrasp(TRAIN *, int len);
+void sort(TRAIN *, int len);
 void return_error(FILE *);
-void read(TRAIN *, FILE *);
-int putout(TRAIN *, FILE *, int *);
+TRAIN *read_from_txt_to_bin();
+void read_bin();
+void exctract();
+void find_by_name();
+
 
 #endif
